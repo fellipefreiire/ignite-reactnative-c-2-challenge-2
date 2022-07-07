@@ -49,7 +49,7 @@ function AuthProvider({ children }: AuthProviderData) {
       // RESPONSE_TYPE - set to "token"
       const RESPONSE_TYPE = 'token'
       // SCOPE - create a space-separated list of the following scopes: "openid", "user:read:email" and "user:read:follows"
-      const SCOPE = encodeURI('openiduser:read:emailuser:read:follows')
+      const SCOPE = encodeURI('openid user:read:email user:read:follows')
       // FORCE_VERIFY - set to true
       const FORCE_VERIFY = true
       // STATE - generate random 30-length string using generateRandom() with "size" set to 30
